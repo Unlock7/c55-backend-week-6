@@ -1,4 +1,4 @@
-package net.hackyourfuture.backend.week6.postify.model;
+package net.hackyourfuture.backend.week6.postify.dto;
 
 import lombok.Getter;
 import lombok.Setter;
