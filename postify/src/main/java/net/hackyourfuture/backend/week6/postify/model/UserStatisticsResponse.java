@@ -1,6 +1,10 @@
 package net.hackyourfuture.backend.week6.postify.model;
 
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @JsonPropertyOrder({
         "userId",
@@ -12,7 +16,10 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
         "favoriteGenre",
         "totalListeningTimeSeconds"
 })
-
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class UserStatisticsResponse {
 
         public int userId;
@@ -23,6 +30,7 @@ public class UserStatisticsResponse {
         public int uniqueArtistsStreamed;
         public String favoriteGenre;
         public int totalListeningTimeSeconds;
-    }
+
+}
 
 
